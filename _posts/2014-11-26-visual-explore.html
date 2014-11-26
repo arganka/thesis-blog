@@ -1,0 +1,61 @@
+---
+post_title: >
+  Visual Exploration of Sparse Traffic
+  Trajectory Data
+author: argankathesis
+post_excerpt: ""
+layout: post
+permalink: /references/visual-explore/
+---
+
+
+<blockquote>title: "Visual Exploration of Sparse Traffic Trajectory Data"
+doi: "<a href="http://dx.doi.org/10.1109/TVCG.2014.2346746">http://dx.doi.org/10.1109/TVCG.2014.2346746</a>"
+what: "Visualisasi data sparse pada traffic"
+dibaca: 28 Oktober 2014</blockquote>
+
+
+
+Data: trajectory dan cell data.
+Trajectory data: video kamera dengan OCR, selama 169 hari. ⟨plate number, plate color,cell id,lane id,speed,timestamp⟩
+Total 870 juta records.
+Cell data: names, spatial positions dan directions. 472 cells.
+
+User evaluation: 4 case studies.
+Participant: tidak dimention, tapi kemungkinan expert user.
+
+<strong>Komentar singkat</strong>
+Berbeda dengan visualisasi traffic pada umumnya yang menggunakan data GPS yang kontinu, paper ini menggunakan data sparse yang unik dengan karakteristik spasialnya. Penulisan paper ini juga sangat mudah untuk diikuti.
+
+<strong>Inspirasi</strong>
+Mengingatkan saya pada mantra overview first, zoom, detail on demand. Sangat menginspirasi untuk memecah detail aplikasi pada 3 tingkatan: map general view, route, dan view untuk korelasi nantinya. Walaupun saya belum bisa memastikan korelasi apa yang akan saya visualisasi dari konteks eksternal, tapi pencerahan fitur sistem yang akan dibangun nantinya sangat melegakan.
+
+Selain itu paper ini juga menjelaskan tiga tipe data yang biasanya digunakan dalam visualisasi traffic: berbasis event, lokasi, dan pergerakan. Inspirasi tentang agregasi data dalam visualisasi juga saya dapatkan dari paper ini.
+
+<strong>Quoted</strong>
+<em>Event based traffic data are usually log data collected manually. Each event usually has position, time and a set of attributes. Location based traffic data are collected by roadside detectors, including inductive loops, video cameras, etc. Such data are mainly used for traffic monitoring at predefined locations. For each location, it records a few statistical quantities, e.g. flow volume, occupancy or speed. Movement based traffic data are either directly collected from GPS devices, or reconstructed from images, videos or point clouds. It records the trajectories of a set of vehicles.</em>
+
+<em>In this paper, we focus on sparse traffic trajectory data. It is a combination of location based and movement based traffic data, because it records the movement of vehicles only at predefined locations. No such traffic data has been studied in the visualization community.</em>
+
+<em>In the past few years, government in the city of Nanjing, China has been pushing a project on intelligent transportation system. In this project, several hundreds of transportation cells are set up on the roadside for traffic monitoring. The cells are usually installed at approx. 200 meters downstream a road intersection. Each cell is directed, meaning it is responsible for only one-direction of traffic flow. The cells have video cameras mounted in order to record vehicles passing through.</em>
+
+<strong>Abstract</strong>
+<em>In this paper, we present a visual analysis system to explore sparse traffic trajectory data recorded by transportation cells. Such data contains the movements of nearly all moving vehicles on the major roads of a city. Therefore it is very suitable for macro- traffic analysis. However, the vehicle movements are recorded only when they pass through the cells. The exact tracks between two consecutive cells are unknown. To deal with such uncertainties, we first design a local animation, showing the vehicle movements only in the vicinity of cells. Besides, we ignore the micro-behaviors of individual vehicles, and focus on the macro-traffic patterns. We apply existing trajectory aggregation techniques to the dataset, studying cell status pattern and inter-cell flow pattern. Beyond that, we propose to study the correlation between these two patterns with dynamic graph visualization techniques. It allows us to check how traffic congestion on one cell is correlated with traffic flows on neighbouring links, and with route selection in its neighbourhood. Case studies show the effectiveness of our system.</em>
+
+<strong>Index Terms</strong>
+Sparse Traffic Trajectory, Traffic Visualization, Dynamic Graph Visualization, Traffic Congestion
+
+<strong>Referensi yang menarik</strong>
+G. Andrienko and N. Andrienko. Spatio-temporal aggregation for visual analysis of movements. In Proc. IEEE VAST, pages 51–58, 2008.
+G. Andrienko, N. Andrienko, P. Bak, D. Keim, and S. Wrobel. Visual Analytics of Movement. Springer, 2013.
+G.Andrienko,N.Andrienko,J.Dykes,S.I.Fabrikant,andM.Wachowicz. Geovisualization of dynamics, movement and change: key issues and developing approaches in visualization research. Information Visualization, 7(3):173–180, 2008.
+N. Andrienko, G. Andrienko, H. Stange, T. Liebig, and D. Hecker. Visual analytics for understanding spatial situations from episodic move- ment data. Knstliche Intelligenz, 26(3):241–251, 2012.
+F. Beck, M. Burch, S. Diehl, and D. Weiskopf. The state of the art in visualizing dynamic graphs. In Proc. EuroVis STAR, 2014.
+N. Ferreira, J. T. Klosowski, C. E. Scheidegger, and C. T. Silva. Vector field k-means: Clustering trajectories by fitting multiple vector fields. Comput. Graph. Forum, 32(3):201–210, 2013.
+H.Guo,Z.Wang,B.Yu,H.Zhao,andX.Yuan.Tripvista:Tripleperspective visual trajectory analytics and its application on microscopic traffic data at a road intersection. In Proc. IEEE PacificVis, pages 163–170, 2011.
+C.-T.Lu,A.P.Boedihardjo,J.Dai,andF.Chen.Homes:highwayopera
+tion monitoring and evaluation system. In Proc. ACM SIGSPATIAL GIS,
+pages 85:1–85:2, 2008.
+W. Zeng, C.-W. Fu, S. M. Arisona, and H. Qu. Visualizing interchange
+patterns in massive movement data. Comput. Graph. Forum, 32(3):271–
+280, 2013.
